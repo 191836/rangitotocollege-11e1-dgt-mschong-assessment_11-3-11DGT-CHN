@@ -1,49 +1,141 @@
-body {
-  margin: 0;
-  padding: 0;
-}
 
-h1, h2, p {
-  margin: 10px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333333;
-  display: flex;
-}
-
-ul li a {
-  display: block;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  background-color: #111111;
-}
-.container {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("school.webp");  /* 背景图 */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      color: #333;
     }
-    .container img {
+    /* 主标题 */
+    .page-title {
+      margin-top: 120px; /* 顶部留出空间 */
+      text-align: center;
+      font-size: 36px;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    }
+    /* 顶部橙色条 */
+    .top-bar {
+      background-color: orange;
+      height: 40px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    /* 导航栏 */
+    .nav-bar {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      position: fixed;
+      top: 40px; /* 紧贴橙色栏 */
+      left: 0;
+      right: 0;
+      z-index: 1001;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .nav-bar a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-bar a:hover {
+      color: orange;
+    }
+ /* 介绍区 */
+    .intro {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 12px;
+      max-width: 900px;
+      margin: 20px auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .intro img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .intro-text {
+      max-width: 600px;
+    }
+
+    .intro-text h2 {
+      margin-top: 0;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .intro-text p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+    }
+    /* 模块区域 */
+    .modules {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .module {
+      width: 250px;
+      height: 180px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .module:hover {
+      transform: translateY(-10px);
+    }
+
+    .module img {
       width: 100%;
       height: 100%;
-      object-fit: cover; /* 保持比例铺满 */
+      object-fit: cover; /* 关键：图片铺满容器 */
+      display: block;
     }
-    .text-overlay {
+
+    .module a {
       position: absolute;
-      top: 50%; 
+      bottom: 10px;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
       color: white;
-      font-size: 2em;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 10px 20px;
-      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
     }
+    .section-title {
+  text-align: center;
+  font-size: 36px;
+  font-family: "Comic Sans MS", "Chalkboard SE", cursive; /* 滑稽字体 */
+  font-weight: bold;
+  color: #ff1493; /* 鲜艳粉色 */
+  text-shadow: 2px 2px 6px yellow, -2px -2px 6px cyan; /* 多彩阴影效果 */
+  margin: 30px 0 20px;
+}
