@@ -1,14 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <meta charset ="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometry</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-  </head>
-  <body>
-    <h1>Geometry</h1>
-    <p>Welcome to the Geometry page!</p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Geometry Module</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <link rel="stylesheet" href="geometry.css">
+</head>
+<body>
+<div class="top-bar"></div>
+ <div class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="algebra.html">Algebra</a>
+    <a href="about us.html">About Us</a>
+    <a href="probability.html">Probability</a>
+  </div>
+  <h1>Geometry Module</h1>
+  <p>This module introduces basic geometry concepts, worked examples, and practice problems.</p>
+
+  <!-- Section 1: Angles -->
+  <h2>1. Angles</h2>
+  <p>An angle is formed by two rays sharing a common endpoint (the vertex).  
+     For example, a right angle measures <span>\(90^\circ\)</span>.</p>
+
+  <div class="example">
+    <h3>Example: Complementary Angles</h3>
+    <p>If one angle is \(30^\circ\), find its complementary angle.</p>
+    <p><b>Solution:</b></p>
+    <p>Complementary angles add up to \(90^\circ\).  
+       \(90^\circ - 30^\circ = 60^\circ\).  
+       So the other angle is \(60^\circ\).</p>
+  </div>
+
+  <div class="exercise">
+    <h3>Practice Problem</h3>
+    <p>If one angle is \(45^\circ\), what is its complementary angle?</p>
+    <button onclick="toggleAnswer('ans1')">Show Answer</button>
+    <div id="ans1" class="answer">
+      \(90^\circ - 45^\circ = 45^\circ\)
+    </div>
+  </div>
+
+  <!-- Section 2: Area of Shapes -->
+  <h2>2. Area of Shapes</h2>
+  <p>The area of a triangle is given by the formula:  
+     <span>\(\text{Area} = \frac{1}{2} \times \text{base} \times \text{height}\)</span>.</p>
+
+  <div class="example">
+    <h3>Example: Triangle Area</h3>
+    <p>Find the area of a triangle with base \(10 \, \text{cm}\) and height \(6 \, \text{cm}\).</p>
+    <p><b>Solution:</b></p>
+    <p>\(\frac{1}{2} \times 10 \times 6 = 30 \, \text{cm}^2\)</p>
+  </div>
+
+  <div class="exercise">
+    <h3>Practice Problem</h3>
+    <p>Find the area of a triangle with base \(8 \, \text{cm}\) and height \(5 \, \text{cm}\).</p>
+    <button onclick="toggleAnswer('ans2')">Show Answer</button>
+    <div id="ans2" class="answer">
+      \(\frac{1}{2} \times 8 \times 5 = 20 \, \text{cm}^2\)
+    </div>
+  </div>
+
+  <!-- Section 3: Pythagoras' Theorem -->
+  <h2>3. Pythagoras' Theorem</h2>
+  <p>In a right triangle:  
+     <span>\(a^2 + b^2 = c^2\)</span>,  
+     where \(c\) is the hypotenuse.</p>
+
+  <div class="example">
+    <h3>Example: Pythagoras</h3>
+    <p>Find the hypotenuse of a right triangle with sides \(a=3\), \(b=4\).</p>
+    <p><b>Solution:</b></p>
+    <p>\(c^2 = 3^2 + 4^2 = 9 + 16 = 25 \implies c = 5\)</p>
+  </div>
+
+  <div class="exercise">
+    <h3>Practice Problem</h3>
+    <p>A right triangle has legs \(a=5\), \(b=12\). Find the hypotenuse.</p>
+    <button onclick="toggleAnswer('ans3')">Show Answer</button>
+    <div id="ans3" class="answer">
+      \(c^2 = 5^2 + 12^2 = 25 + 144 = 169 \implies c = 13\)
+    </div>
+  </div>
+
+  <!-- External JS -->
+  <script src="index.js"></script>
+</body>
 </html>
+

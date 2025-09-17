@@ -4,11 +4,53 @@
   <meta charset ="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Algebra</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="algebra.css">
   <script src="index.js"></script>
-  </head>
-  <body>
-    <h1>Algebra</h1>
-    <p>Welcome to the Algebra page!</p>
-  </body>
+</head>
+<body>
+  <div class="top-bar"></div>
+ <div class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="geometry.html">Geometry</a>
+    <a href="about us.html">About Us</a>
+    <a href="probability.html">Probability</a>
+  </div>
+  <h1>Algebra Module</h1>
+  <p>Here you will learn the key concepts of algebra, step-by-step examples, and practice problems.</p>
+
+  <!-- Basics -->
+  <h2>1. What is Algebra?</h2>
+  <p>Algebra is the study of numbers, symbols, and the rules for manipulating them.  
+     For example, the expression <span>\(2x + 3\)</span> means “two times x plus three.”</p>
+
+  <!-- Example -->
+  <div class="example">
+    <h3>Example: Solve an Equation</h3>
+    <p>Solve the equation: <span>\(2x + 3 = 7\)</span></p>
+    <p><b>Solution:</b></p>
+    <p>\(2x + 3 = 7 \implies 2x = 4 \implies x = 2\)</p>
+  </div>
+
+  <!-- Exercise -->
+  <div class="exercise">
+    <h3>Practice Problem</h3>
+    <p>Solve the equation: <span>\(3x - 5 = 10\)</span></p>
+    <button onclick="toggleAnswer('ans1')">Show Answer</button>
+    <div id="ans1" class="answer">
+      Solution: \(3x - 5 = 10 \implies 3x = 15 \implies x = 5\)
+    </div>
+  </div>
+
+  <!-- Quadratic Equations -->
+  <h2>2. Quadratic Equations</h2>
+  <p>The standard form is: <span>\(ax^2 + bx + c = 0\)</span>, where \(a \neq 0\).</p>
+
+  <div class="example">
+    <h3>Example: Solve a Quadratic Equation</h3>
+    <p>Solve: <span>\(x^2 - 5x + 6 = 0\)</span></p>
+    <p><b>Solution:</b></p>
+    <p>\((x-2)(x-3)=0 \implies x=2 \text{ or } x=3\)</p>
+  </div>
+</body>
 </html>
+

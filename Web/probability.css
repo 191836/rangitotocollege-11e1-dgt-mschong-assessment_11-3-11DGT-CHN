@@ -1,36 +1,11 @@
+/* General Reset */
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
+  background: #f4f6f8;
   line-height: 1.6;
-  margin: 20px;
-  background: #fdfdfd;
 }
-h1, h2 {
-  color: #333;
-}
-.example, .exercise {
-  background: #f5f5f5;
-  padding: 15px;
-  border-radius: 10px;
-  margin: 15px 0;
-}
-.answer {
-  display: none;
-  margin-top: 10px;
-  color: green;
-}
-button {
-  margin-top: 8px;
-  padding: 6px 12px;
-  border: none;
-  border-radius: 6px;
-  background-color: #0077cc;
-  color: white;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #005fa3;
-}
- .top-bar {
+.top-bar {
       background-color: orange;
       height: 40px;
       position: fixed;
@@ -39,7 +14,9 @@ button:hover {
       right: 0;
       z-index: 1000;
     }
-.nav-bar {
+
+    
+    .nav-bar {
       position: fixed;
       top: 0;
       left: 0;
@@ -71,3 +48,42 @@ button:hover {
     .nav-bar a:hover {
       color: orange;
     }
+ 
+
+
+/* Content Sections */
+.content-section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.content-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.show-answer {
+  margin: 10px 0;
+  padding: 8px 14px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.show-answer:hover {
+  background: #2980b9;
+}
+
+.answer.hidden {
+  display: none;
+  margin-top: 8px;
+  color: #27ae60;
+  font-weight: bold;
+}
