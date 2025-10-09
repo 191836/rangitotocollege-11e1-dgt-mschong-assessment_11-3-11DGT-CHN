@@ -1,10 +1,3 @@
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-  line-height: 1.6;
-}
 .top-bar {
       background-color: orange;
       height: 40px;
@@ -14,8 +7,6 @@ body {
       right: 0;
       z-index: 1000;
     }
-
-    
     .nav-bar {
       position: fixed;
       top: 0;
@@ -48,42 +39,3 @@ body {
     .nav-bar a:hover {
       color: orange;
     }
- 
-
-
-
-.content-section {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.content-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #2c3e50;
-}
-
-.show-answer {
-  margin: 10px 0;
-  padding: 8px 14px;
-  background: #3498db;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.show-answer:hover {
-  background: #2980b9;
-}
-
-.answer.hidden {
-  display: none;
-  margin-top: 8px;
-  color: #27ae60;
-  font-weight: bold;
-}
