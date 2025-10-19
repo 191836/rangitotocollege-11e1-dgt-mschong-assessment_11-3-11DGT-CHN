@@ -10,7 +10,7 @@
     margin-bottom: 30px;
   }
 
-  /* 网格布局 */
+  
   .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -31,7 +31,7 @@
 
   .video-card iframe {
     width: 100%;
-    height: 140px; /* 小巧版 */
+    height: 140px; 
     border: none;
   }
 
@@ -43,9 +43,9 @@
     margin: 0;
   }
 
-  /* 可滚动容器（可选） */
+  
   .video-container {
-    max-height: 600px; /* 页面不太长 */
+    max-height: 600px; 
     overflow-y: auto;
     padding-right: 5px;
   }
